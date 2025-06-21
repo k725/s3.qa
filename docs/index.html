@@ -100,13 +100,14 @@
         }
 
         .main-content {
-            min-height: calc(100vh - 100px);
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 2rem 0;
+            margin-bottom: 2rem;
         }
 
         .domain-name {
@@ -189,7 +190,7 @@
             padding: 1.5rem 0;
             text-align: center;
             border-top: 1px solid var(--border);
-            background: rgba(10, 10, 10, 0.95);
+            background: rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
             z-index: 10;
         }
@@ -200,6 +201,7 @@
         }
 
         @media (max-width: 768px) {
+
             .domain-name {
                 font-size: clamp(3rem, 20vw, 6rem);
             }
@@ -246,6 +248,7 @@
 
         .domain-family {
             margin-top: 3rem;
+            margin-bottom: 50px;
             padding: 3rem 2rem;
             background: rgba(255, 255, 255, 0.02);
             border: 1px solid var(--border);
